@@ -4,7 +4,7 @@ go-demo
 
 ## 常用命令
 
-1. go文件编译
+#### 1. go文件编译
 ```
 go build HelloWorld.go
 
