@@ -6,6 +6,7 @@ import (
 	"os/exec"
 )
 
+// go run cmd/run_system_command.go ps aux
 func main() {
 	str, err := runCommand(os.Args[1:]...)
 	if err != nil {
