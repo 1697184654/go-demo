@@ -8,6 +8,8 @@ go-demo
 ```
 go build HelloWorld.go
 
-go build -o .\bin\HelloWorld.exe .\cmd\HelloWorld.go
+win: go build -o .\bin\HelloWorld.exe .\cmd\HelloWorld.go
+
+maxos: go build -o bin/demo cmd/demo.go 
 
 ```
