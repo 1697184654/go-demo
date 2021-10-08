@@ -12,4 +12,7 @@ win: go build -o .\bin\HelloWorld.exe .\cmd\HelloWorld.go
 
 maxos: go build -o bin/demo cmd/demo.go 
 
+
+ go build -o bin/RunSystemCommandCommand cmd/run_system_command.go
+
 ```
