@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-// go run cmd/run_system_command.go ps aux
+// go run cmd/print_command-result.go ps aux
 func main() {
 	str, err := runCommand(os.Args[1:]...)
 	if err != nil {
