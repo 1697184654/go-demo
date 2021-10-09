@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-// go run cmd/print_command-result.go ps aux
+// go run cmd/print_command_result.go ps aux
 func main() {
 	str, err := runCommand(os.Args[1:]...)
 	if err != nil {
@@ -20,5 +20,5 @@ func runCommand(arg ...string) ([]byte, error) {
 		fmt.Println("Usage: %s args...\n", os.Args[0])
 		os.Exit(-1)
 	}
-	return exec.Command(arg[0], arg[1:]...).Output()
+	return exec.Command(arg[0], arg[1:]...).CombinedOutput()
 }
