@@ -19,9 +19,9 @@ func main() {
 		return
 	}
 	ipInfo, err := region.MemorySearch(ip)
-	fmt.Println(ipInfo, err)
+	fmt.Println("memory算法", ipInfo, err)
 	ipInfo, err = region.BinarySearch(ip)
-	fmt.Println(ipInfo, err)
+	fmt.Println("binary算法二分查找", ipInfo, err)
 	ipInfo, err = region.BtreeSearch(ip)
-	fmt.Println(ipInfo, err)
+	fmt.Println("b-tree算法", ipInfo, err)
 }
